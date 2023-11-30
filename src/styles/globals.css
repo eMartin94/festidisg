@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Balsamiq+Sans&family=Belleza&family=Comic+Neue:wght@300;400;700&family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@400;800&family=Mountains+of+Christmas:wght@400;700&family=Oswald:wght@400;700&family=Pompiere&family=Urbanist:wght@400;800;900&family=Yanone+Kaffeesatz:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #777;
+}
+
+#miInput {
+  box-sizing: border-box;
+  overflow-y: hidden;
+  resize: none;
+  text-transform: uppercase !important;
+}
+
+#miInput.expandido {
+  height: auto;
+  overflow-y: auto;
+  text-transform: uppercase;
+}
+
+::-webkit-resizer {
+  background-image: url('/arrow.png');
+  background-position: center;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
+
+a .instagram {
+  @apply text-gray-500 hover:text-pink-600;
+}
+a .x {
+  @apply text-gray-500 hover:text-sky-700;
+}
+a .codepen {
+  @apply text-gray-500 hover:text-slate-800;
+}
+
+/* ----------- */
+
+.btn {
+  @apply grow-0 shrink basis-40 border-[1px] px-2 py-2 rounded-3xl capitalize cursor-pointer bg-opacity-80 hover:bg-opacity-100 transition-all duration-200 ease-linear disabled:cursor-not-allowed disabled:hover:bg-opacity-80;
+}
+.annieuseyourtelescope {
+  @apply font-annieuseyourtelescope;
+}
+.balsamiq {
+  @apply font-balsamiq;
+}
+.belleza {
+  @apply font-belleza;
+}
+.boska {
+  @apply font-boska;
+}
+.cabinetgrotesk {
+  @apply font-cabinetgrotesk;
+}
+.chillax {
+  @apply font-chillax;
+}
+.comicneue {
+  @apply font-comicneue;
+}
+.montserrat {
+  @apply font-montserrat;
+}
+.mountainsofchristmas {
+  @apply font-mountainsofchristmas;
+}
+.oswald {
+  @apply font-oswald;
+}
+.pompiere {
+  @apply font-pompiere;
+}
+.urbanist {
+  @apply font-urbanist;
+}
+.yanonekaffeesatz {
+  @apply font-yanonekaffeesatz;
+}
+.widthPreview {
+  @apply w-[280px] h-[280px] xs:w-[400px] xs:h-[400px] sm:w-[450px] sm:h-[450px] lg:w-[480px] lg:h-[480px] xl:w-[500px] xl:h-[500px];
+}
+.nameToCard {
+  @apply text-lg xs:text-2xl md:text-3xl font-black text-center w-full uppercase mb-1 xs:mb-2;
+}
+.phraseCard {
+  @apply text-[10px] xs:text-xs md:text-sm lg:text-base text-center max-w-[55%];
+}
+
+.titleTheme-1 {
+  @apply text-title-one font-oswald max-w-[250px];
+}
+.titleTheme-2 {
+  @apply text-title-two font-oswald max-w-[150px] xs:max-w-[250px];
+}
+.titleTheme-3 {
+  @apply text-title-three font-oswald w-[200px] xs:w-full;
+}
+.titleTheme-4 {
+  @apply text-title-four font-oswald w-full;
+}
+.titleTheme-5 {
+  @apply text-title-five font-oswald;
+}
+.titleTheme-6 {
+  @apply text-title-six font-oswald;
+}
+.titleTheme-7 {
+  @apply text-title-seven font-oswald max-w-[200px];
+}
+
+.paragraphTheme-1 {
+  @apply text-paragraph-one;
+}
+.paragraphTheme-2 {
+  @apply text-paragraph-two;
+}
+.paragraphTheme-3 {
+  @apply text-paragraph-three;
+}
+.paragraphTheme-4 {
+  @apply text-paragraph-four;
+}
+.paragraphTheme-5 {
+  @apply text-paragraph-five;
+}
+.paragraphTheme-6 {
+  @apply text-paragraph-six;
+}
+.paragraphTheme-7 {
+  @apply text-paragraph-seven;
+}
+
+.topTheme-1 {
+  @apply top-[55%];
+}
+.topTheme-2 {
+  @apply top-[45%] xs:top-[50%] left-[15%];
+}
+.topTheme-3 {
+  @apply top-[35%] xs:top-[38%] -left-[15%];
+}
+.topTheme-4 {
+  @apply top-[36%] xs:top-[38%] left-0;
+}
+.topTheme-5 {
+  @apply top-[35%];
+}
+.topTheme-6 {
+  @apply top-[40%] xs:top-[45%] left-[-15%];
+}
+.topTheme-7 {
+  @apply top-[33%] xs:top-[35%] left-0;
+}
+
+/*-------*/
+
+.button.loading ul {
+  -webkit-animation: text calc(var(--duration) * 1ms) linear forwards
+    calc(var(--duration) * 0.065ms);
+  animation: text calc(var(--duration) * 1ms) linear forwards
+    calc(var(--duration) * 0.065ms);
+}
+.button.loading > div:before {
+  -webkit-animation: line calc(var(--duration) * 1ms) linear forwards
+    calc(var(--duration) * 0.065ms);
+  animation: line calc(var(--duration) * 1ms) linear forwards
+    calc(var(--duration) * 0.065ms);
+}
+.button.loading > div:after {
+  -webkit-animation: background calc(var(--duration) * 1ms) linear forwards
+    calc(var(--duration) * 0.065ms);
+  animation: background calc(var(--duration) * 1ms) linear forwards
+    calc(var(--duration) * 0.065ms);
+}
+.button.loading > div svg {
+  -webkit-animation: svg calc(var(--duration) * 1ms) linear forwards
+    calc(var(--duration) * 0.065ms);
+  animation: svg calc(var(--duration) * 1ms) linear forwards
+    calc(var(--duration) * 0.065ms);
+}
+
+@keyframes text {
+  10%,
+  85% {
+    transform: translateY(-100%);
+  }
+  95%,
+  100% {
+    transform: translateY(-200%);
+  }
+}
+@keyframes line {
+  5%,
+  10% {
+    transform: translateY(-30px);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  65% {
+    transform: translateY(0);
+  }
+  75%,
+  100% {
+    transform: translateY(30px);
+  }
+}
+@keyframes svg {
+  0%,
+  20% {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+  }
+  21%,
+  89% {
+    stroke-dasharray: 26px;
+    stroke-dashoffset: 26px;
+    stroke-width: 3px;
+    margin: -10px 0 0 -10px;
+    /* stroke: var(--checkmark); */
+    stroke: #fff;
+  }
+  100% {
+    stroke-dasharray: 26px;
+    stroke-dashoffset: 0;
+    margin: -10px 0 0 -10px;
+    /* stroke: var(--checkmark); */
+    stroke: #fff;
+  }
+  12% {
+    opacity: 1;
+  }
+  20%,
+  89% {
+    opacity: 0;
+  }
+  90%,
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes background {
+  10% {
+    transform: scaleY(0);
+  }
+  40% {
+    transform: scaleY(0.15);
+  }
+  65% {
+    transform: scaleY(0.5);
+    border-radius: 0 0 50% 50%;
+  }
+  75% {
+    border-radius: 0 0 50% 50%;
+  }
+  90%,
+  100% {
+    border-radius: 0;
+  }
+  75%,
+  100% {
+    transform: scaleY(1);
+  }
+}
