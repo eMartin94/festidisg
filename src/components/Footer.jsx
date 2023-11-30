@@ -4,7 +4,6 @@ import { navLinks, social } from '@/constants';
 import { useScrollToTop } from '@/hooks/useScrollToTop';
 import Image from 'next/image';
 import { useShowComponent } from '@/hooks/useShowComponent';
-import { imgLogo } from '@/config';
 
 const Footer = () => {
   const scrollToTop = useScrollToTop();
@@ -16,7 +15,7 @@ const Footer = () => {
       <div className='mb-4 flex w-full flex-col items-center justify-around gap-4 md:flex-row'>
         <div className='w-32'>
           <Image
-            src={imgLogo}
+            src='https://res.cloudinary.com/dxbbbewxt/image/upload/v1701296397/FestiDisg/logo-festidisg_w3ir0n.webp'
             alt='logo'
             width={150}
             height={150}

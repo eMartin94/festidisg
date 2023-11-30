@@ -12,8 +12,7 @@ import {
 } from '@react-email/components';
 import * as React from 'react';
 
-const logoUrl =
-  'https://res.cloudinary.com/dxbbbewxt/image/upload/v1701201751/FestiDisg/logo-festidisg_fmjenl.png';
+const logoUrl = process.env.NEXT_PUBLIC_LOGO;
 
 export const WelcomeEmail = ({ userFirstname }) => (
   <Html>

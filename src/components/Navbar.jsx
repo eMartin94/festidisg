@@ -8,7 +8,6 @@ import { navLinks } from '@/constants';
 import { useScrollNavbar } from '@/hooks/useScrollNavbar';
 import Image from 'next/image';
 import { useShowComponent } from '@/hooks/useShowComponent';
-import { imgLogo } from '@/config';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -31,7 +30,7 @@ const Navbar = () => {
       <nav className='mx-auto flex w-full max-w-7xl items-center justify-between p-4'>
         <Link href='/' className='w-20' onClick={scrollToTop}>
           <Image
-            src={imgLogo}
+            src='https://res.cloudinary.com/dxbbbewxt/image/upload/v1701296397/FestiDisg/logo-festidisg_w3ir0n.webp'
             alt='logo'
             className='h-full w-full'
             width={200}
