@@ -14,6 +14,7 @@ export const sendContactForm = async (data) => {
     }
     return response;
   } catch (error) {
+    console.log(error);
     throw new Error('Error de red al enviar el formulario');
   }
 };
